@@ -18,7 +18,7 @@ class CoreTest {
     }
 
     @Test fun channelCongestion() {
-        val scans = listOf(2437 to -50, 2437 to -60, 2437 to -65, 2437 to -70, 2412 to -60)
+        val scans = listOf(2437 to -50, 2437 to -60, 2437 to -65, 2437 to -70, 2422 to -60)
         val l = Channels.analyse(2437, scans)
         assertEquals(3, l.same); assertEquals(1, l.overlap)
     }
